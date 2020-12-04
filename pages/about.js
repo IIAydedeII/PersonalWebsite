@@ -1,33 +1,41 @@
-import styled from "styled-components";
 import { Text } from "@geist-ui/react";
+import { Code } from "@geist-ui/react";
+import { Emoji } from "@geist-ui/react-icons";
+import styled from "styled-components";
 import Layout from "../components/layout";
 
-const Div = styled.div`
-  border: 1px solid #f00;
-`;
-
-const Cont = () => {
+const Article = () => {
   return (
-    <Div>
-      <h2>Hakkında</h2>
+    <>
+      <Emoji />
+      <Text p>
+        Bu metin bir deneme metnidir. Bu metin bir deneme metnidir. Bu metin bir
+        <Text i> deneme</Text> metnidir. Bu metin bir deneme metnidir. Bu metin
+        bir deneme metnidir. Bu metin bir deneme metnidir.
+      </Text>
+      <Text blockquote>Bu metin bir deneme metnidir.</Text>
       <Text>
-        Bu metin bir deneme metnidir. Bu metin bir deneme metnidir. Bu metin bir
-        deneme metnidir. Bu metin bir deneme metnidir. Bu metin bir deneme
+        Bu metin bir deneme metnidir. Bu metin bir <Text small>deneme </Text>
+        metnidir. Bu metin bir deneme metnidir. Bu metin bir
+        <Text b> deneme</Text> metnidir. Bu metin bir deneme metnidir. Bu metin
+        bir deneme metnidir.
+      </Text>
+      <Text type="error">Bu metin bir deneme metnidir.</Text>
+      <Text>
+        Bu metin bir deneme metnidir.{" "}
+        <Text del>Bu metin bir deneme metnidir.</Text> Bu metin bir deneme
+        metnidir.<Code> Bu metin bir deneme metnidir.</Code> Bu metin bir deneme
         metnidir. Bu metin bir deneme metnidir.
       </Text>
-      <Text b>
-        Bu metin bir deneme metnidir. Bu metin bir deneme metnidir. Bu metin bir
-        deneme metnidir. Bu metin bir deneme metnidir. Bu metin bir deneme
-        metnidir. Bu metin bir deneme metnidir.
-      </Text>
-    </Div>
+    </>
   );
 };
 
 const About = () => {
   return (
     <Layout>
-      <Cont />
+      <h2>Hakkında</h2>
+      <Article />
     </Layout>
   );
 };
