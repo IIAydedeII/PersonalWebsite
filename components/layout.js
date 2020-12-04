@@ -1,17 +1,21 @@
 import Navigation from "./navigation";
 import Head from "next/head";
 
-export default function Layout({ children }) {
+const Layout = ({ children }) => {
   return (
     <main>
-      <Head>
-        <title>Next.js sitem</title>
-      </Head>
-      <Navigation />
-      {children}
-      <footer>
-        <p>by dede</p>
-      </footer>
+      <>
+        <Head>
+          <title></title>
+        </Head>
+        <Navigation />
+        {children}
+        <footer>
+          <p>by dede</p>
+        </footer>
+      </>
     </main>
   );
-}
+};
+
+export default Layout;
