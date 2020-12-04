@@ -1,43 +1,42 @@
+import { Page } from "@geist-ui/react";
 import styled from "styled-components";
 import Navigation from "./navigation";
-import Head from "next/head";
 
-const Main = styled.main`
-  display: grid;
-  justify-content: center;
-  align-items: center;
+// const Main = styled.main`
+//   display: grid;
+//   justify-content: center;
+//   align-items: center;
 
-  & > div {
-    width: 640px;
-  }
+//   & > div {
+//     width: 640px;
+//   }
 
-  footer {
-    color: blueviolet;
-    margin-top: 15px;
-    margin-bottom: 10px;
-  }
-`;
+//   footer {
+//     color: blueviolet;
+//     margin-top: 15px;
+//     margin-bottom: 10px;
+//   }
+// `;
 
-const Children = styled.div`
-  display: grid;
-  justify-content: center;
-  align-items: center;
-`;
+// const Children = styled.div`
+//   display: grid;
+//   justify-content: center;
+//   align-items: center;
+// `;
 
 const Layout = ({ children }) => {
   return (
-    <Main>
-      <div>
-        <Head>
-          <title></title>
-        </Head>
-        <Navigation />
-        <Children>{children}</Children>
-        <footer>
+    <main>
+      <Page size="small">
+        <Page.Header>
+          <Navigation />
+        </Page.Header>
+        <Page.Content>{children}</Page.Content>
+        <Page.Footer>
           <p6>by dede</p6>
-        </footer>
-      </div>
-    </Main>
+        </Page.Footer>
+      </Page>
+    </main>
   );
 };
 
