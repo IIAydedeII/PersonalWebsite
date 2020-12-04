@@ -4,8 +4,8 @@ import Link from "next/Link";
 const Nav = styled.nav`
   display: flex;
   gap: 20px;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 
   a {
     color: purple;
