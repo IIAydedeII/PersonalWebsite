@@ -2,6 +2,8 @@ import { Page } from "@geist-ui/react";
 import styled from "styled-components";
 import Navigation from "./navigation";
 
+const { Header, Content, Footer } = Page;
+
 // const Main = styled.main`
 //   display: grid;
 //   justify-content: center;
@@ -26,17 +28,15 @@ import Navigation from "./navigation";
 
 const Layout = ({ children }) => {
   return (
-    <main>
-      <Page size="small">
-        <Page.Header>
-          <Navigation />
-        </Page.Header>
-        <Page.Content>{children}</Page.Content>
-        <Page.Footer>
-          <p6>by dede</p6>
-        </Page.Footer>
-      </Page>
-    </main>
+    <Page size="small">
+      <Header>
+        <Navigation />
+      </Header>
+      <Content>{children}</Content>
+      <Footer>
+        <h6>by dede</h6>
+      </Footer>
+    </Page>
   );
 };
 
