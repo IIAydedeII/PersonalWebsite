@@ -3,15 +3,14 @@ import Layout from "../components/layout";
 
 const Home = () => {
   const [toasts, setToast] = useToasts();
-  const click = () =>
-    setToast({ text: "The Evil Rabbit jumped over the fence." });
+  const click = () => setToast({ text: "Böh." });
 
   return (
     <Layout>
       <div>
         <h1>Ana Sayfa</h1>
       </div>
-      <Button onClick={click}>Show Toast</Button>
+      <Button onClick={click}>Tost</Button>
     </Layout>
   );
 };
