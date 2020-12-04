@@ -11,8 +11,13 @@
   "author": "ahmet-yasin",
   "license": "ISC",
   "dependencies": {
+    "@geist-ui/react": "^2.1.0-canary.2",
     "next": "^10.0.1",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0"
   }
 }
