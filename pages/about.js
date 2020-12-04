@@ -1,13 +1,10 @@
 import { Text } from "@geist-ui/react";
 import { Code } from "@geist-ui/react";
-import { Emoji } from "@geist-ui/react-icons";
-import styled from "styled-components";
 import Layout from "../components/layout";
 
 const Article = () => {
   return (
     <>
-      <Emoji />
       <Text p>
         Bu metin bir deneme metnidir. Bu metin bir deneme metnidir. Bu metin bir
         <Text i> deneme</Text> metnidir. Bu metin bir deneme metnidir. Bu metin

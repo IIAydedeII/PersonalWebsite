@@ -1,30 +1,38 @@
 import styled from "styled-components";
-import Link from "next/Link";
+import { Breadcrumbs } from "@geist-ui/react";
+import { Home } from "@geist-ui/react-icons";
+import { Meh } from "@geist-ui/react-icons";
+import { FileMinus } from "@geist-ui/react-icons";
+import NextLink from "next/link";
+
+const { Item } = Breadcrumbs;
 
 const Nav = styled.nav`
-  display: flex;
-  gap: 20px;
-  padding-top: 10px;
-  padding-bottom: 15px;
-
-  a {
-    color: purple;
-    font-weight: bold;
-  }
+  padding-top: 15px;
 `;
 
 const Navigation = () => {
   return (
     <Nav>
-      <Link href="/">
-        <a>Ana Sayfa</a>
-      </Link>
-      <Link href="/about">
-        <a>Hakkında</a>
-      </Link>
-      <Link href="/form">
-        <a>Form</a>
-      </Link>
+      <Breadcrumbs size="large" separator="-">
+        <NextLink href="/">
+          <Item nextLink>
+            <Home />
+          </Item>
+        </NextLink>
+        <NextLink href="/about">
+          <Item nextLink>
+            <Meh />
+            Hakkımda
+          </Item>
+        </NextLink>
+        <NextLink href="/form">
+          <Item nextLink>
+            <FileMinus />
+            Form
+          </Item>
+        </NextLink>
+      </Breadcrumbs>
     </Nav>
   );
 };
