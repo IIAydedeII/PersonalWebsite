@@ -1,5 +1,6 @@
 import { Text } from "@geist-ui/react";
 import { Code } from "@geist-ui/react";
+import { Divider } from "@geist-ui/react";
 import Layout from "../components/layout";
 
 const Article = () => {
@@ -17,6 +18,7 @@ const Article = () => {
         <Text b> deneme</Text> metnidir. Bu metin bir deneme metnidir. Bu metin
         bir deneme metnidir.
       </Text>
+      <Divider />
       <Text type="error">Bu metin bir deneme metnidir.</Text>
       <Text>
         Bu metin bir deneme metnidir.{" "}
@@ -31,7 +33,7 @@ const Article = () => {
 const About = () => {
   return (
     <Layout>
-      <h2>Hakkında</h2>
+      <h2>Hakkımda</h2>
       <Article />
     </Layout>
   );
