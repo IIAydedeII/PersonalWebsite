@@ -1,8 +1,6 @@
-import styled from "styled-components";
 import { Breadcrumbs } from "@geist-ui/react";
-import { Home } from "@geist-ui/react-icons";
-import { Meh } from "@geist-ui/react-icons";
-import { FileMinus } from "@geist-ui/react-icons";
+import { Home, Meh, FileMinus } from "@geist-ui/react-icons";
+import styled from "styled-components";
 import NextLink from "next/link";
 
 const { Item } = Breadcrumbs;
